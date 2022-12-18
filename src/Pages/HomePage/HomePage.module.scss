@@ -1,0 +1,139 @@
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: $neutral-color;
+}
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding-top: 5%;
+
+  &_src {
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 25px;
+
+  &_text {
+    font-size: 1.8rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: rgb(52, 52, 52);
+  }
+}
+
+.ascend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 30px;
+
+  &_text {
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    color: $content-color;
+  }
+}
+
+.subHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 30px;
+
+  &_text {
+    width: 90%;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: rgb(52, 52, 52);
+  }
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 25px;
+
+  &_text {
+    width: 60%;
+    font-size: 0.7rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: $content-color;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 80px;
+  width: 100%;
+  padding-bottom: 5%;
+
+  &_start {
+    width: 80%;
+    height: 32px;
+    background: $contrast-color;
+    border: 1px solid $contrast-color;
+    border-radius: 8px;
+    color: white;
+  }
+
+  &_start:hover {
+    cursor: pointer;
+    filter: $filter-focused;
+  }
+
+  &_logIn {
+    width: 80%;
+    height: 32px;
+    background: $content-color;
+    border: 1px solid $content-color;
+    border-radius: 8px;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    padding-top: 15%;
+  }
+}

@@ -1,0 +1,19 @@
+// Colors
+$primary-color: #00aec7;
+$contrast-color: #20677c;
+$contrast-alt: #ea6686;
+$base-white: #ffffff;
+$content-color: #6b6b6b;
+$neutral-color: #f3f2f2;
+
+// Anim
+$transition: all 0.275s ease-in-out;
+
+// Filters
+$filter-focused: brightness(1.2);
+$filter-disabled: contrast(0.5);
+$filter-desaturated: contrast(0.9);
+
+// Shadow
+$focused-shadow: 0 0 0 10px $primary-color;
+$contrast-shadow: 0 0 0 5px $contrast-color;
