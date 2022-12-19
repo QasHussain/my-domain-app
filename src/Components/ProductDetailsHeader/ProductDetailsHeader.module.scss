@@ -31,6 +31,11 @@
   &_icon {
     height: 30px;
   }
+
+  &_icon:hover {
+    cursor: pointer;
+  }
+
   &_text {
     font-size: 1.1rem;
     padding-left: 10px;
