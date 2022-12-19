@@ -14,7 +14,7 @@ const ProductOneDetails: FC<ProductProp> = ({ setPage }) => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 225) {
+      if (window.scrollY > 210) {
         handleMove(true);
       } else handleMove(false);
     });

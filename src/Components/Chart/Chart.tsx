@@ -82,8 +82,8 @@ export const data = {
     },
     {
       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-      borderColor: "#ea6686",
-      backgroundColor: "#ea6686",
+      borderColor: "#20677c",
+      backgroundColor: "#20677c",
     },
   ],
 };
