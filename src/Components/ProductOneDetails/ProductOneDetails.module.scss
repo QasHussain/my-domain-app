@@ -7,21 +7,24 @@
   flex-direction: column;
   width: 100vw;
   background: $base-white;
+  transition: $transition;
 }
 
 .product {
   margin-top: -15px;
+  transition: $transition;
 }
 
 .navBarWrapper {
+  transition: $transition;
   padding-top: 10px;
 }
 
 .navBarWrapper_move {
   position: fixed;
   top: 40px;
-  transition-timing-function: linear;
-  transition: all 0.5s;
+  // transition-timing-function: linear;
+  transition: $transition;
 }
 
 .navBar {
@@ -68,6 +71,7 @@
   height: 30px;
   width: 100%;
   background: #c7c7c7;
+  transition: $transition;
 
   &_text {
     color: #434343;
@@ -85,6 +89,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  transition: $transition;
 }
 
 .midSectionContent {
@@ -93,6 +98,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: $transition;
 
   &_box {
     height: 55px;
@@ -123,6 +129,7 @@
   align-items: flex-start;
   width: 95%;
   height: 140px;
+  transition: $transition;
 
   &_text {
     margin-bottom: 10px;
@@ -142,6 +149,7 @@
   align-items: center;
   width: 95%;
   height: 500px;
+  transition: $transition;
 
   &_chart {
     height: 300px;
