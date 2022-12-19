@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 0;
+  min-width: 0;
+  flex: 0;
+  overflow: hidden;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  opacity: 100%;
+  bottom: 0px;
+  padding: 20px;
+  width: 100%;
+  height: 1%;
+  background-color: $base-white;
+  border-top: solid 1px #858585;
+  z-index: 1;
+
+  &_img {
+    color: $content-color;
+    align-items: center;
+    justify-content: center;
+    transition: $transition;
+  }
+
+  &_img:hover {
+    cursor: pointer;
+    color: $primary-color;
+  }
+
+  &_imgSelected {
+    align-items: center;
+    justify-content: center;
+    color: $primary-color;
+  }
+}

@@ -1,0 +1,109 @@
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: $base-white;
+  height: 180px;
+}
+
+.backDrop {
+  height: 600px;
+}
+
+.cardOutline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85vw;
+  height: 160px;
+  box-shadow: 3px 3px 10px $content-color;
+  transition: $transition;
+
+  &:hover {
+    box-shadow: 0 0 10px $primary-color;
+    cursor: pointer;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cardImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+
+  &_src {
+    height: 100px;
+  }
+  &_src2 {
+    height: 80px;
+  }
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  width: 50%;
+  height: 100%;
+  color: $content-color;
+
+  &_one {
+    font-size: 1.05rem;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-weight: 350;
+  }
+  &_two {
+    font-size: 1.05rem;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: 300;
+  }
+  &_three {
+    font-size: 0.9rem;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: 300;
+  }
+  &_four {
+    font-size: 0.9rem;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: 300;
+  }
+}
+
+.primary {
+  color: $bubble-dark;
+  font-weight: 500;
+}
+
+.active {
+  color: green;
+}
+.error {
+  color: red;
+}

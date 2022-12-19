@@ -1,24 +1,29 @@
 import { FC } from "react";
-import styles from "./ProductHeader.module.scss";
+import styles from "./Footer.module.scss";
 
-export interface PageSet {
-  setPage: string;
-}
+import { IoCogOutline, IoSettingsOutline } from "react-icons/io5";
+import { GoGraph } from "react-icons/go";
+import { BsBell } from "react-icons/bs";
 
-const ProductHeader: FC = () => {
+const Footer: FC = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.header}>
-        {/* <img className={styles.header_icon} alt="Logo" src={Logo} /> */}
-
-        <p className={styles.header_text}>business</p>
-      </div>
-
-      <div className={styles.title}>
-        <p className={styles.title_text}>Sign Up</p>
+      <div className={styles.footer}>
+        <div className={styles.footer_imgSelected}>
+          <IoCogOutline size={32} />
+        </div>
+        <div className={styles.footer_img}>
+          <GoGraph size={25} />
+        </div>
+        <div className={styles.footer_img}>
+          <BsBell size={25} />
+        </div>
+        <div className={styles.footer_img}>
+          <IoSettingsOutline size={27} />
+        </div>
       </div>
     </div>
   );
 };
 
-export default ProductHeader;
+export default Footer;

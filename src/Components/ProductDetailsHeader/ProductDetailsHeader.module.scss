@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 50px;
+  padding-bottom: 10px;
+}
+
+.topBar {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: $base-white;
+  height: 50px;
+  transition: $transition;
+  position: fixed;
+  top: 0px;
+}
+
+.header {
+  padding-left: 10px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+
+  &_icon {
+    height: 30px;
+  }
+  &_text {
+    font-size: 1.1rem;
+    padding-left: 10px;
+    color: $content-color;
+    font-weight: 400;
+  }
+}

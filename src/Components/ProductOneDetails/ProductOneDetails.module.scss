@@ -1,0 +1,151 @@
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  background: $base-white;
+}
+
+.product {
+  margin-top: -15px;
+}
+
+.navBarWrapper {
+  padding-top: 10px;
+}
+
+.navBarWrapper_move {
+  position: fixed;
+  top: 40px;
+  transition-timing-function: linear;
+  transition: all 0.5s;
+}
+
+.navBar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: 40px;
+  background: $base-white;
+  //   background: blue;
+
+  &_text {
+    color: #727272;
+    width: 33.3vw;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dddddd;
+    transition: $transition;
+  }
+
+  &_text:hover {
+    cursor: pointer;
+    border-bottom: 1px solid $primary-color;
+    color: $primary-color;
+  }
+
+  &_textSelected {
+    padding-bottom: 5px;
+    border-bottom: 1px solid $primary-color;
+    color: $primary-color;
+    width: 33.3vw;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+}
+
+.midBar {
+  margin-top: 22px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  background: #c7c7c7;
+
+  &_text {
+    color: #434343;
+    padding-left: 5%;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+}
+
+.midSection {
+  height: 130px;
+  padding: 0;
+  margin-bottom: -30px;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.midSectionContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &_box {
+    height: 55px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $bubble-color;
+    border-radius: 2px;
+    font-weight: 400;
+    color: #5f5f5f;
+  }
+
+  &_text {
+    font-size: 0.9rem;
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+    font-weight: 400;
+    color: #3d3d3d;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  width: 95%;
+  height: 140px;
+
+  &_text {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    color: #3d3d3d;
+  }
+
+  &_primary {
+    font-weight: 500;
+    color: $primary-color;
+  }
+}
+
+.chartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 500px;
+
+  &_chart {
+    height: 300px;
+    width: 95%;
+    margin-top: -50px;
+  }
+}

@@ -6,7 +6,7 @@
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  padding: 15px;
+  padding: 10px;
   background: $base-white;
 }
 
@@ -15,21 +15,45 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 80vw;
-  padding-bottom: 5px;
+  width: 85vw;
+  height: 50px;
+  padding-bottom: 10px;
+  transition: $transition;
+}
+
+.topBar_move {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 95vw;
+  height: 50px;
+  transition: $transition;
+  position: fixed;
+  top: 0px;
+  background: $base-white;
 }
 
 .header {
   padding: 0;
   margin: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
 
   &_icon {
-    height: 54px;
+    height: 45px;
   }
+
+  &_icon:hover {
+    cursor: pointer;
+  }
+
   &_text {
-    color: $primary-color;
-    font-weight: 600;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    color: $content-color;
+    font-weight: 700;
   }
 }
 
@@ -37,10 +61,15 @@
   padding: 0;
   margin: 0;
   display: flex;
-  font-weight: 300;
+  justify-content: center;
+  align-items: center;
 
   &_icon {
-    // height: 54px;
+    height: 45px;
+  }
+
+  &_icon:hover {
+    cursor: pointer;
   }
 }
 
@@ -50,8 +79,9 @@
   align-items: center;
   background: #d0d0d0;
   border-radius: 6px;
-  width: 80%;
+  width: 85vw;
   height: 35px;
+  transition: $transition;
 
   &_icon {
     padding: 5px;
@@ -72,10 +102,40 @@
   }
 
   &:hover {
-    box-shadow: 0 0 10px #719ece;
+    box-shadow: 0 0 10px $primary-color;
   }
 
   &_bar::placeholder {
     padding-left: 5px;
+  }
+}
+
+.selectBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85vw;
+  padding-top: 15px;
+  transition: $transition;
+
+  &_bar {
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: $bubble-color;
+    padding: 10px;
+    color: $content-color;
+    height: 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    transition: $transition;
+  }
+
+  &_bar:hover {
+    box-shadow: 0 0 10px $primary-color;
+    cursor: pointer;
   }
 }

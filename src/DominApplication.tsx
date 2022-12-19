@@ -1,20 +1,22 @@
-import { FC } from "react";
-// import HomePage from "./Pages/HomePage/HomePage";
-import ProductList from "./Pages/ProductList/ProductList";
+import { FC, useState } from "react";
+import ProductOneDetails from "./Components/ProductOneDetails/ProductOneDetails";
+import HomePage from "./Pages/HomePage/HomePage";
+import ProductList from "./Pages/ProductListPage/ProductListPage";
 
 export interface PageSet {
   setPage: string;
 }
 
 const DominApplication: FC = () => {
-  // const [page, setPage] = useState<string>("homePage");
+  const [page, setPage] = useState<string>("homePage");
 
-  // console.log(page);
+  console.log(page);
 
   return (
     <div>
-      {/* <HomePage setPage={setPage} /> */}
-      <ProductList />
+      {page === "homePage" && <HomePage setPage={setPage} />}
+      {page === "productList" && <ProductList setPage={setPage} />}
+      {page === "productOne" && <ProductOneDetails setPage={setPage} />}
     </div>
   );
 };
